@@ -2,12 +2,12 @@ spring:
   application:
     name: dm-pay-provider
   rabbitmq:
-    host: 192.168.9.151
+    host: 192.168.92.131
     port: 5672
     username: guest
     password: guest
   datasource:
-    url: jdbc:mysql://192.168.9.151:3306/dm_pay?useUnicode=true&characterEncoding=gbk&zeroDateTimeBehavior=convertToNull
+    url: jdbc:mysql://192.168.92.131:3306/dm_pay?useUnicode=true&characterEncoding=gbk&zeroDateTimeBehavior=convertToNull
     username: root
     password: 123456
     driver-class-name: com.mysql.jdbc.Driver
@@ -24,9 +24,9 @@ spring:
 eureka:
   client:
     service-url:
-#       defaultZone: http://root:123456@192.168.9.151:9000/eureka/
+#       defaultZone: http://root:123456@192.168.92.131:9000/eureka/
 #      defaultZone: http://root:123456@discovery:9000/eureka/
-      defaultZone: http://root:123456@192.168.9.151:7776/eureka/
+      defaultZone: http://root:123456@192.168.92.131:7776/eureka/
   instance:
     prefer-ip-address: true
 server:
@@ -42,7 +42,7 @@ eureka:
   client:
     service-url:
       defaultZone: http://root:123456@discovery:7776/eureka/
-#      defaultZone: http://root:123456@192.168.9.151:9000/eureka/
+#      defaultZone: http://root:123456@192.168.92.131:9000/eureka/
   instance:
     prefer-ip-address: true
 server:
